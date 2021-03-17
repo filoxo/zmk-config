@@ -11,6 +11,7 @@
 
 #define LOWR 1
 #define RAIS 2
+#define MUTE_MIC LG(LS(A))
 
 / {
         keymap {
@@ -19,7 +20,7 @@
                 default_layer {
                         bindings = <
 &kp ESC     &kp Q       &kp W       &kp E       &kp R       &kp T          &kp Y       &kp U       &kp I       &kp O       &kp P       &kp C_PP
-&mt LCTRL TAB &kp A       &kp S       &kp D       &kp F       &kp G          &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp SQT
+&mt LCTRL TAB &kp A     &kp S       &kp D       &kp F       &kp G          &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp SQT
 &kp LSHFT   &kp LALT    &kp Z       &kp X       &kp C       &kp V          &kp B       &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH
                                     &mo LOWR    &kp LGUI    &kp BSPC       &kp SPACE   &kp RET     &mo RAIS
                         >;
@@ -36,9 +37,9 @@
 
                 raise_layer {
                         bindings = <
-&kp TILDE   &trans      &trans      &trans      &trans      &trans         &trans      &trans      &trans      &kp MINUS   &kp EQUAL   &trans
-&bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &trans      &trans      &trans         &trans      &trans      &trans      &trans      &trans      &trans
-&out OUT_TOG &trans      &trans      &trans      &trans      &trans         &trans      &trans      &trans      &trans      &trans      &trans
+&kp TILDE   &bt BT_CLR &bt BT_SEL 1  &bt BT_SEL 2 &kp C_PREV &kp C_VOL_UP  &kp C_VOL_DN &kp C_NEXT &trans      &kp MINUS   &kp EQUAL   &kp MUTE_MIC
+&trans      &trans      &trans      &trans      &trans      &trans         &trans      &trans      &trans      &trans      &trans      &trans
+&out OUT_TOG &trans      &trans     &trans      &trans      &trans         &trans      &trans      &trans      &trans      &trans      &trans
                                     &trans      &trans      &trans         &trans      &trans      &trans
                         >;
                 };
