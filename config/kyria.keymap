@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define LOWR 1
 #define RAIS 2
@@ -52,7 +53,7 @@
 	&trans &bt BT_NXT &bt BT_PRV &trans &trans &trans                                   &trans  &trans  &trans  &trans  &trans  &trans
 	&trans &trans &trans &trans &trans &trans                                           &trans  &trans  &trans  &trans  &trans  &trans
 	&trans &trans &trans &trans &trans &trans                                           &trans  &trans  &trans  &trans  &trans  &trans
-	              &trans &trans &trans &trans &trans                             &trans &trans  &trans  &trans  &trans
+	              &out OUT_TOG &trans &trans &trans &trans                             &trans &trans  &trans  &trans  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_NEXT C_PREV &inc_dec_kp C_NEXT C_PREV>;
