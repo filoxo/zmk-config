@@ -1,0 +1,12 @@
+file_format: "1"
+id: dactyl 
+name: Dactyl 
+type: shield
+requires: [nice_nano]
+exposes: []
+features:
+  - keys
+  - encoder  
+siblings:
+  - dactyl_left
+  - dactyl_right
