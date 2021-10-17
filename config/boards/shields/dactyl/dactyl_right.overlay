@@ -1,4 +1,4 @@
-#include "dactyl.confi"
+#include "dactyl.conf"
 #include "dactyl.dtsi"
 
 &default_transform {
