@@ -23,3 +23,11 @@ include:
     shield: elephant42_left
   - board: nice_nano
     shield: elephant42_right
+  - board: nice_nano
+    shield: corne_left
+  - board: nice_nano
+    shield: corne_right
+  - board: nice_nano
+    shield: kyria_left
+  - board: nice_nano
+    shield: kyria_right
