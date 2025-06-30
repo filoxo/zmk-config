@@ -17,7 +17,7 @@
 / {
   chosen {
     zephyr,display = &oled;
-  }
+  };
 
   keymap {
     compatible = "zmk,keymap";
