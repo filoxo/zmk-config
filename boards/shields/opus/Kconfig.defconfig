@@ -1,0 +1,6 @@
+if SHIELD_OPUS
+
+config ZMK_KEYBOARD_NAME
+  default "Opus"
+
+endif
