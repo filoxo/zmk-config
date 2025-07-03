@@ -1,2 +1,2 @@
 config SHIELD_OPUS
-  def_bool $(shields_list_contains, opus)
+  def_bool $(shields_list_contains,opus)
